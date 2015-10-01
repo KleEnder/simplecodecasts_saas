@@ -3,7 +3,7 @@
         <div class="well">
             <%= form_for @contact do |f| %>
                 <div class="form=group">
-                    <%= f.label :label %>
+                    <%= f.label :name %>
                     <%= f.text_field :name, class: "form-control" %>
                 </div>    
                 
@@ -16,7 +16,7 @@
                     <%= f.label :comments %>
                     <%= f.text_area :comments, class: "form-control" %>
                 </div>
-                <%= f.submit 'Submit', class: 'btn btn-default' %>
+                <%= f.submit "Submit", class: "btn btn-default" %>
             <% end %>
         </div>
     </div>    
